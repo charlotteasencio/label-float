@@ -4,12 +4,10 @@ $(document).ready(function(){
         if ($(this).find('input').val() ) {
             $(this).find('label').hide();
             $(this).addClass('pinkShit')
-        } else {
-            $(this).find('label').show();
-        }
+        } 
     })
 
-    $('.textinput').on('click', function() {
+    $('.textinput').on('focusin', function() {
         if ($(this).find('input').val()) {
             $(this).find('label').show();
             $(this).removeClass('pinkShit')
